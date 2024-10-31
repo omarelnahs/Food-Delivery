@@ -25,7 +25,7 @@ const Navbar = () => {
                     <div className="navbar-search-icon relative">
                         <img className='w-5 h-5' src={assets.basket_icon} alt="cart" />
                         {
-                            <div className="dot"></div>
+                            <div className="dot">asdas</div>
                         }
                     </div>
                     <button className='btn py-2 px-4 border border-solid border-gray-500 rounded-xl hover:bg-gray-200 transition-all '>Sign In</button>
