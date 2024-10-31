@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <nav className="">
-            <div className='navbar container pt-5 mx-auto flex justify-between items-center'>
+            <div className='navbar container pt-5 px-2 mx-auto flex justify-between items-center'>
                 <div className="logo">
                     <img src={assets.logo} className='logo w-32' width={"100%"} height={"100%"} alt="logo" />
                 </div>

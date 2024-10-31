@@ -1,12 +1,14 @@
 .explore-menu-list{
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
-.explore-menu-list::-webkit-scrollbar {
-    display: none;
+@media (max-width:991px) {
+    .explore-menu-list::-webkit-scrollbar {
+        display: none;
+    }
 }
 .explore-menu-item img{
-    width: 100px;
-    height: 100px;
+
     border-radius: 50%;
 }
 .explore-menu-item .active{
