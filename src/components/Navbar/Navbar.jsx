@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Navbar.css" 
 import { assets } from "../../assets/assets"
     
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
 
     const [menu, setMenu] = useState("home")
 
@@ -28,7 +28,9 @@ const Navbar = () => {
                             <div className="dot"></div>
                         }
                     </div>
-                    <button className='btn py-2 px-4 border border-solid border-gray-500 rounded-xl hover:bg-gray-200 transition-all '>Sign In</button>
+                    <button
+                        className='btn py-2 px-4 border border-solid border-gray-500 rounded-xl hover:bg-gray-200 transition-all '
+                        onClick={() => setShowLogin(true)}>Sign In</button>
                 </div>
             </div>
         </nav>
