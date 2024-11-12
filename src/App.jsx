@@ -14,12 +14,12 @@ const App = () => {
   return (
     <>
       {showLogin && <Login setShowLogin={setShowLogin} />}
+      <Navbar setShowLogin={setShowLogin} />
       <div className="app">
-        <Navbar setShowLogin={setShowLogin} />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path='/placeorder' element={<PlaceOrder />} />
+          <Route path='/order' element={<PlaceOrder />} />
         </Routes>
       </div>
       <Footer />

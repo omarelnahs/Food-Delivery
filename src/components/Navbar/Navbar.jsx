@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Navbar.css" 
 import { assets } from "../../assets/assets"
+import { Link } from 'react-router-dom'
     
 const Navbar = ({setShowLogin}) => {
 
@@ -10,7 +11,9 @@ const Navbar = ({setShowLogin}) => {
         <nav className="">
             <div className='navbar container pt-5 px-2 mx-auto flex justify-between items-center'>
                 <div className="logo">
-                    <img src={assets.logo} className='logo w-32' width={"100%"} height={"100%"} alt="logo" />
+                    <Link to='/'>
+                        <img src={assets.logo} className='logo w-32' width={"100%"} height={"100%"} alt="logo" />
+                    </Link>
                 </div>
                 <ul className="navbar-menu hidden md:flex justify-between items-center  gap-4">
                     <li onClick={()=>setMenu("home")} className={menu === "home" ? " border-b-2 border-solid border-red-500 cursor-pointer" : " cursor-pointer"}>Home</li>
@@ -23,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
                         <img className='w-5 h-5' src={assets.search_icon} alt="search" />
                     </div>
                     <div className="navbar-search-icon relative">
-                        <img className='w-5 h-5' src={assets.basket_icon} alt="cart" />
+                        <Link to={'/cart'}><img className='w-5 h-5' src={assets.basket_icon} alt="cart" /></Link>
                         {
                             <div className="dot"></div>
                         }
